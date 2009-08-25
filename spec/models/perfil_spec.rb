@@ -24,7 +24,7 @@ describe Perfil do
   end
   
   it "deve validar usuario/senha incorretos" do
-    Perfil.validar('teste1', 'senha321').should be_false
+    Perfil.validar('teste1', 'senha321').should be_nil
   end
   
   it "deve validar usuario/senha corretos" do
