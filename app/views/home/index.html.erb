@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Login</title>
+  		<%= stylesheet_link_tag :all %>
+
+	</head>
+	<body>
+		<div id="login_page">
+			<h1>BECKANOS.com</h1>
+			<div id="login_image">--image--</div>
+			<div id="login_form">
+			<% if flash[:notice] %>
+				<div id="notice">
+					<%= flash[:notice] %>
+				</div>
+			<% end %>
+			<% form_tag :action => 'login' do%>
+				Login: <%= text_field_tag 'login', '', :maxlength => 20 %><br>
+				Senha: <%= text_field_tag 'senha', '', :maxlenght => 20 %><br>
+				<%= submit_tag 'Entrar >>'%>
+			<% end %>
+			</div>
+		</div>
+	</body>
+</html>

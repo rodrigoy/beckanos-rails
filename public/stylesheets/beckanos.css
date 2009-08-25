@@ -1,0 +1,101 @@
+body {
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	top:20px;
+	width:902px;
+}
+
+h1 {
+	color: red;
+}
+
+#login_page {
+	position: relative;
+	height: 300px;
+	width: 500px;
+	margin: auto;
+	vertical-align: middle;
+	padding: 20px;
+	background-color: #445566;
+	
+}
+
+#login_image {
+	display:inline;
+	position: absolute;
+	background-color: white;
+	top: 100px;
+	left: 60px;
+	height: 150px;
+	width: 150px;
+}
+
+#login_form {
+	display:inline;
+	position: absolute;
+	top: 130px;
+	left: 240px;
+	height: 150px;
+	width: 260px;
+}
+
+#notice {
+	padding: 4px;
+	margin:4px;
+	background-color: red;
+	color:white;
+}
+
+#panel_left_image {
+	position: absolute;
+	background-color: white;
+	width: 150px;
+	height: 600px;
+	border: dotted;
+}
+
+#main {
+	display: inline;
+	position: absolute;
+	left: 120px;
+	width:700px;
+	height: auto;
+}
+
+#panel_top {
+	position: absolute;
+	left: 50px;
+	width: 770px;
+	height: 80px;
+	border: dashed;
+	background-color: grey;
+}
+
+#foto_top {
+	position:absolute;
+	left: 20px;
+	top: 7px;
+	width: 55px;
+	height: 55px;
+	background-color: blue;
+	border: dashed;
+	padding:4px;
+}
+
+#dados_top {
+	position:relative;
+	top: -10px;
+	left: 100px;
+	display:inline;
+}
+
+#panel_left {
+	position:relative;
+	border: solid #EEEEEE 1px;
+	top:100px;
+	left:50px;
+	width:400px;
+	min-height:250px;
+}

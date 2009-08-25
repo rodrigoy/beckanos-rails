@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Perfil do Usuário</title>
+ 		<%= stylesheet_link_tag :all %>
+	</head>
+	<body>
+		<div id="panel_left_image">--image--</div>
+		<div id="main">
+			<div id="panel_top">
+				<div id="foto_top"><%= image_tag "perfils/#{@perfil.id}.jpg", :size=>"50x50" %></div>
+				<div id="dados_top">
+					<h2><%= @perfil.nome %></h2>
+					<%= @perfil.estado_civil %>, <%= @perfil.idade %> anos
+				</div>
+			</div>
+			<div id="panel_left">
+				<%= @perfil.descricao %>
+			</div>
+			<div id="panel_right">
+				<div id="panel_amigos"></div>
+				<div id="panel_comunidades"></div>
+			</div>
+		</div>
+	</body>
+</html>
