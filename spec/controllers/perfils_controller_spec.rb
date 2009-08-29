@@ -6,10 +6,10 @@ describe PerfilsController do
   end  
   
   it "deve mostrar o usuário passado como parâmetro" do
-    #controller.should_receive(:login_required).and_return(true)
+    controller.should_receive(:login_required).and_return(true)
     Perfil.should_receive(:find).with("1").and_return(@perfil)
     get(:show, :id => "1")
-    response.should be_sucess
+    response.should be_success
   end
 
 end
